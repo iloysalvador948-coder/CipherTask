@@ -1,0 +1,38 @@
+name: cipher_text
+description: "A new Flutter project."
+publish_to: 'none' 
+
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.10.8
+
+dependencies:
+  flutter:
+    sdk: flutter
+  cupertino_icons: ^1.0.8
+
+  # State Management (For MVVM)
+  provider: ^6.1.1
+
+  # Security & Encryption
+  flutter_secure_storage: ^9.0.0 # Hardware-backed keystore
+  encrypt: ^5.0.1                # AES-256 field encryption
+
+  # Database (Hive is highly recommended here as it has built-in AES-256)
+  hive: ^2.2.3
+  hive_flutter: ^1.1.0
+
+  # Authentication
+  local_auth: ^2.1.7             # Biometrics (Fingerprint/FaceID)
+
+  # Bonus: Prevent Screenshots (Android only)
+  flutter_windowmanager: ^0.2.0
+
+dev_dependencies:
+  flutter_test:
+    sdk: flutter
+  flutter_lints: ^6.0.0
+
+flutter:
+  uses-material-design: true
