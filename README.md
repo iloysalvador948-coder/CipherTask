@@ -1,16 +1,22 @@
-# cipher_text
+# CipherTask - Secure Encrypted To-Do System
 
-A new Flutter project.
+A highly secure, enterprise-grade task management application built with Flutter, strictly adhering to the MVVM architectural pattern. 
 
-## Getting Started
+## 🛡️ Security Features Implemented
+* **Data at Rest:** AES-256 field-level encryption for highly sensitive notes (via `encrypt` package).
+* **Encrypted Database:** Secure local storage using an encrypted Hive box.
+* **Hardware Key Storage:** Database encryption keys are generated and stored securely using `flutter_secure_storage`.
+* **Biometric Authentication:** Fingerprint/FaceID login (requires a password login first).
+* **Session Management:** Automatic app lock after 2 minutes of user inactivity.
+* **🌟 BONUS (+5 pts):** Multi-Factor Authentication (MFA) simulated via a 6-digit OTP during registration.
+* **🌟 BONUS (+5 pts):** Screenshot prevention implemented via `flutter_windowmanager`.
 
-This project is a starting point for a Flutter application.
+## 👥 Team Members & Roles
+* **[Student 1 Name]** - Team Lead (M1) / Architecture Setup
+* **[Student 2 Name]** - Security & Encryption Integration
+* **[Student 3 Name]** - UI/UX & MVVM Implementation
+* **[Student 4 Name]** - Session Management & Biometrics
+*(Note: Adjust the names and roles based on your actual group!)*
 
-A few resources to get you started if this is your first Flutter project:
-
-- [Lab: Write your first Flutter app](https://docs.flutter.dev/get-started/codelab)
-- [Cookbook: Useful Flutter samples](https://docs.flutter.dev/cookbook)
-
-For help getting started with Flutter development, view the
-[online documentation](https://docs.flutter.dev/), which offers tutorials,
-samples, guidance on mobile development, and a full API reference.
+## 📂 Architecture
+This project strictly follows the required MVVM structure, separating the View (UI), ViewModel (State/Logic), and Services (Data/Security).
